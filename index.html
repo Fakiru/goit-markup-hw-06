@@ -408,6 +408,17 @@
                   </ul>
                 </div>
               </li>
+              <li class="footer-section_item">
+                <div class="footer-subscribe">
+                  <h3 class="footer-subscribe_title"> Subscribe to the newsletter</h3>
+                  <form class="footer-subscribe_form" name="subscribe_form" autocomplete="on" novalidate>
+                    <input type="email" name="email" placeholder="E-mail"/>
+                    <button type="submit">Subscribe <svg width="24" height="24">
+                      <use href="images/icons-svg.svg#icon-send"></use></svg>
+                    </button>
+                  </form>
+                </div>
+              </li>
             </ul>
           </address>
         </div>
@@ -418,9 +429,48 @@
     <!--Modal-->
 
     <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
-        <button class="close-btn" data-modal-close>&times;</button>
-        Modal content
+      <div class="modal-content container">
+        <button data-modal-close class="close-btn" >
+          <svg width="11" height="11">
+            <use href="images/icons-svg.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3>Leave your information and we'll call you back</h3>   
+        <form class="client-contact-form">
+          <label class="form-item">
+            Name
+            <input type="text" name="name"/>
+            <svg id="symbol" width="12" height="12">
+              <use href="images/icons-svg.svg#icon-client"></use>
+            </svg>
+          </label>
+          <label class="form-item">
+            Telephone
+            <input type="tel" name="phone"/>
+            <svg id="symbol" width="13" height="13">
+              <use href="images/icons-svg.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="form-item">
+            E-mail
+            <input type="email" name="email"/>
+            <svg id="symbol" width="15" height="12">
+              <use href="images/icons-svg.svg#icon-e-mail"></use>
+            </svg>
+          </label>
+          <label class="form-item">
+            Comments
+            <textarea name="comments" rows="5" placeholder="Enter the text"></textarea>          
+          </label>
+          <label class="terms">
+            <input type="checkbox">
+            <span class="replace-checkbox"><svg>
+              <use href="images/icons-svg.svg#icon-checked"></use>
+            </svg></span>
+            I agree with the letter and accept the<a class="term-links" href="terms.html">Terms and Conditions</a>
+          </label>
+          <button class="send-btn" type="submit">Send</button>
+        </form>     
       </div>
     </div>
 
