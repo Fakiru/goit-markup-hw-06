@@ -41,6 +41,7 @@ html {
   color: #212121;
   padding-top: 50px;
   padding-bottom: 94px;
+  display: flex;
 }
 
 .regular-section_subtitle {
@@ -62,6 +63,7 @@ html {
 
 .regular-customer-section_item a {
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customer-section_item svg {
@@ -79,9 +81,8 @@ html {
 .regular-customer-section_list {
   display: flex;
   gap: 30px;
-  padding-left: 215px;
-  padding-right: 215px;
   align-items: center;
+  justify-content: center;
 }
 .social-media_item svg {
   fill: currentColor;
@@ -385,6 +386,36 @@ html {
   padding-top: 94px;
 }
 
+.project-section-button_item .button-style {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
+  background: #f5f4fa;
+  border-style: hidden;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-section-button_item .button-style:hover,
+.project-section-button_item .button-style:focus {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .project_logo:hover .overlay {
   top: 0;
   justify-content: center;
@@ -427,126 +458,6 @@ html {
   color: #ffffff;
   padding-top: 50px;
   padding-bottom: 94px;
-}
-
-.project-section-button_item-all {
-  font-size: 16px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #21212f;
-  padding: 0;
-  width: 120px;
-  height: 38px;
-  background: #f5f4fa;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.project-section-button_item-all :hover,
-.project-section-button_item-all :focus {
-  transform: scale(1.05);
-  color: #2196f3;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-section-button_item-web {
-  font-size: 16px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #21212f;
-  padding: 0;
-  width: 120px;
-  height: 38px;
-  background: #f5f4fa;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.project-section-button_item-web:hover,
-.project-section-button_item-web:focus {
-  transform: scale(1.05);
-  color: #2196f3;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-section-button_item-apps {
-  font-size: 16px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #21212f;
-  padding: 0;
-  width: 120px;
-  height: 38px;
-  background: #f5f4fa;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.project-section-button_item-apps:hover,
-.project-section-button_item-apps:focus {
-  transform: scale(1.05);
-  color: #2196f3;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-section-button_item-design {
-  font-size: 16px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #21212f;
-  padding: 0;
-  width: 120px;
-  height: 38px;
-  background: #f5f4fa;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.project-section-button_item-design :hover,
-.project-section-button_item-design :focus {
-  transform: scale(1.05);
-  color: #2196f3;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-section-button_item-marketing {
-  font-size: 16px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #21212f;
-  padding: 0;
-  width: 120px;
-  height: 38px;
-  background: #f5f4fa;
-  cursor: pointer;
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.project-section-button_item-marketing :hover,
-.project-section-button_item-marketing :focus {
-  transform: scale(1.05);
-  color: #2196f3;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-contact_item a:hover,
@@ -669,13 +580,12 @@ html {
 }
 
 .footer-subscribe_title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
+  font-style: normal;
   padding-bottom: 20px;
 }
 
@@ -722,6 +632,20 @@ html {
   color: #fff;
 }
 
+.footer-subscribe {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-subscribe_form {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-subscribe_form button {
+  margin-top: 0px;
+}
+
 .footer-section_item .footer-contact-info {
   align-items: flex-start;
 }
@@ -760,6 +684,7 @@ html {
 
 .footer-social-media_item a {
   color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-media_item {
@@ -778,7 +703,7 @@ html {
   gap: 10px;
 }
 
-.footer-social-media-title {
+.footer-social-media_title {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -838,14 +763,14 @@ html {
 
 .footer-section_item {
   display: flex;
-  justify-content: center;
+
   width: 301px;
 }
 
 .footer-section_list {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
   gap: 60px;
 }
 
@@ -887,7 +812,7 @@ html {
 }
 
 .modal .modal-content h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.01em;
@@ -895,16 +820,17 @@ html {
   margin-bottom: 12px;
 }
 
-.modal .modal-content .close-btn {
+.modal .modal-content .close-button {
   position: absolute;
   right: 0px;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -32px;
-  margin-right: 8px;
+  text-align: center;
+  margin-top: -15px;
+  margin-right: 4px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -912,8 +838,8 @@ html {
   cursor: pointer;
 }
 
-.modal .modal-content .close-btn:hover,
-.modal .modal-content .close-btn:focus {
+.modal .modal-content .close-button:hover,
+.modal .modal-content .close-button:focus {
   color: #2196f3;
 }
 
@@ -1051,4 +977,14 @@ html {
   color: #fff;
   margin: 0 auto;
   cursor: pointer;
+}
+
+.modal .modal-content {
+  max-width: 528px;
+  max-height: 581px;
+}
+
+.client-contact-form .terms {
+  font-size: 14px;
+  line-height: 1.7;
 }
